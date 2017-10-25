@@ -28,12 +28,16 @@
 	void Get_Final_board()
 	{
 		/* Game is over so display the final board */
-			printf("\n\n");
-			printf(" %c | %c | %c\n", board[0][0], board[0][1], board[0][2]);
-			printf("---+---+---\n");
-			printf(" %c | %c | %c\n", board[1][0], board[1][1], board[1][2]);
-			printf("---+---+---\n");
-			printf(" %c | %c | %c\n", board[2][0], board[2][1], board[2][2]);
+			printf("\n\n\tTic Tac Toe\n\n");
+			printf("     |     |     \n");
+			printf("  %c  |  %c  |  %c \n", board[0][0], board[0][1], board[0][2]);
+			printf("_____|_____|_____\n");
+			printf("     |     |     \n");
+			printf("  %c  |  %c  |  %c \n", board[1][0], board[1][1], board[1][2]);
+			printf("_____|_____|_____\n");
+			printf("     |     |     \n");
+			printf("  %c  |  %c  |  %c \n", board[2][0], board[2][1], board[2][2]);
+			printf("     |     |     \n\n");
 
 			/* Display result message */
 			if(winner == 0)
@@ -50,13 +54,16 @@
 			for( i = 0; i<9 && winner==0; i++)
 			{
 			/* Display the board */
-			printf("\n\n");
-			printf(" %c | %c | %c\n", board[0][0], board[0][1], board[0][2]);
-			printf("---+---+---\n");
-			printf(" %c | %c | %c\n", board[1][0], board[1][1], board[1][2]);
-			printf("---+---+---\n");
-			printf(" %c | %c | %c\n", board[2][0], board[2][1], board[2][2]);
-
+			printf("\n\n\tTic Tac Toe\n\n");
+			printf("     |     |     \n");
+			printf("  %c  |  %c  |  %c \n", board[0][0], board[0][1], board[0][2]);
+			printf("_____|_____|_____\n");
+			printf("     |     |     \n");
+			printf("  %c  |  %c  |  %c \n", board[1][0], board[1][1], board[1][2]);
+			printf("_____|_____|_____\n");
+			printf("     |     |     \n");
+			printf("  %c  |  %c  |  %c \n", board[2][0], board[2][1], board[2][2]);
+			printf("     |     |     \n\n");
 
 
 			controll();
@@ -80,7 +87,7 @@
 			row = --go/3; /* Get row index of square */
 			column = go%3; /* Get column index of square */
 			//Debug only
-			printf("[%d] [%d] \n",row,column);
+			//printf("[%d] [%d] \n",row,column);
 
 			}
 			while(go<0 || go>9 || board[row][column]>'9');
@@ -102,7 +109,7 @@
 	}
 
 
-	void main()
+	 int main()
 	{
 
 		View();
@@ -113,5 +120,4 @@
 
 
 	}// main
-
 
